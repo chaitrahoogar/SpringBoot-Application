@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Application
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: chaitra
+Implementation-Vendor-Id: com.hashworks.spring
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://projects.spring.io/spring-boot/SpringBoot-A
+ pplication/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
