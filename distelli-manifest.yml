@@ -3,7 +3,7 @@ chaitra/SpringBoot-Application:
   Env:
     # Set the below enviornment variables for your environment
     - CATALINA_HOME: "/var/lib/tomcat7"
-    - JAVA_HOME: "/usr/lib/jvm/java-7-oracle/jre"
+    - JAVA_HOME: "/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre"
     # The port number below is only for reference. Set it to the
     #  port number of your tomcat server.
     - PORT: "1010"
@@ -18,11 +18,11 @@ chaitra/SpringBoot-Application:
      - sudo apt-get -y install tomcat7
     #- sudo apt-get -y install maven
 
-  Build:
-    - mvn package
+  Build: 
+  - mvn install -DskipTests 
 
   PkgInclude:
-    - '/target/SpringBoot-Application.war'
+    - '/target/SpringBoot-Application.jar'
  
   PreInstall:
     # The below preinstall steps will pre-install
@@ -50,6 +50,6 @@ chaitra/SpringBoot-Application:
     # restart tomcat with the command below.
     # Restart Tomcat - You might have to use a different command
     # depending on how tomcat is installed
-    - sudo service tomcat8 restart
+    - sudo service tomcat7 restart
     - 'echo "You can validate the install by pointing your browser at http://$publicip:$PORT/SpringBoot-Application"'
     
