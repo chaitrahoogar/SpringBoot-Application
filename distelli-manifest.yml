@@ -19,7 +19,7 @@ chaitra/SpringBoot-Application:
     #- sudo apt-get -y install maven
 
   Build:
-    - mvn package
+    - mvn install -DskipTests
 
   PkgInclude:
     - '/target/SpringBoot-Application.war'
