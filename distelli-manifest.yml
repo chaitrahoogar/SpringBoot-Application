@@ -18,8 +18,10 @@ chaitra/SpringBoot-Application:
      - sudo apt-get -y install tomcat7
     #- sudo apt-get -y install maven
 
+
   Build: 
-  - mvn install -DskipTests 
+  - mvn install -DskipTests
+
 
   PkgInclude:
     - '/target/SpringBoot-Application.jar'
